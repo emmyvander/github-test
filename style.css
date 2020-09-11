@@ -1,0 +1,143 @@
+html, body {
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+#hex {
+  font-family: 'Montserrat', sans-serif;
+  color: #ff9e88;
+  padding-bottom: 35px;
+  letter-spacing: 1.5pt;
+  font-size: 10pt;
+}
+
+#rgb {
+  font-family: 'Montserrat', sans-serif;
+  color: #ff9e88;
+  padding-top: 40px;
+  letter-spacing: 0.7pt;
+  font-size: 10pt;
+}
+
+.piano {
+  padding: 70px;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.piano-container, .piano-javascript {
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.piano-container {
+  text-align: center;
+}
+
+.piano-keys{
+  word-spacing: 0;
+  letter-spacing: 0;
+  font-size: 0;
+}
+
+.piano-white, .piano-black {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+}
+
+.piano-white, .piano-black-raised {
+  border-color: white;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.piano-white {
+  width: 80px;
+  height: 350px;
+  background-color: white;
+  z-index: 1;
+}
+
+.piano-black {
+  width: 0px;
+  height: 100px;
+  z-index: 2;
+}
+
+.piano-black-raised {
+  width: 50px;
+  height: 210px;
+  position: relative;
+  left: -33px;
+  background-color: black;
+  border-radius: 0px 0px 20px 20px;
+  border-width: 7px;
+}
+
+.piano-C3 {
+   background-color: #f79caf;
+   border-radius: 50px 0px 0px 50px;
+   border-width: 7px 4px 7px 7px;
+  }
+
+.piano-Db3 {
+  background-color: #ff9e88;
+}
+
+.piano-D3 {
+   background-color: #ffc280;
+   border-width: 7px 4px 7px 4px;
+}
+
+.piano-Eb3 {
+  background-color: #ffcf64;
+}
+
+.piano-E3 {
+   background-color: #f4e769;
+   border-width: 7px 4px 7px 4px;
+}
+
+.piano-F3 {
+   background-color: #d3f39e;
+   border-width: 7px 4px 7px 4px;
+}
+
+.piano-Gb3 {
+  background-color: #abefd7;
+}
+
+.piano-G3 {
+   background-color: #9fe6fc;
+   border-width: 7px 4px 7px 4px;
+}
+
+.piano-Ab3 {
+  background-color: #8bd0f7;
+}
+
+.piano-A3 {
+   background-color: #b1befc;
+   border-width: 7px 4px 7px 4px;
+}
+
+.piano-Bb3 {
+  background-color: #c8a2f9;
+}
+
+.piano-B3 {
+   background-color: #ebabef;
+   border-radius: 0px 50px 50px 0px;
+   border-width: 7px 7px 7px 4px;
+  }

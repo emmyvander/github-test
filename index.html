@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<script src="randomColor.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<title>heyoooo</title>
+
+<body>
+  <script>
+    function changeColorManual(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+    function generateRandomColor() {
+      var randColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      return randColor;
+    }
+
+    function changeColor(color) {
+      var color2 = document.body.style.backgroundColor = randomColor({hue: color})
+      var color3 = color2.toUpperCase();
+      document.getElementById("hex").innerHTML = color3;
+      document.getElementById("hex").style.color = 'white';
+      document.getElementById("rgb").style.color = 'white';
+    }
+
+  </script>
+
+  <div class="piano">
+    <div class="piano-container">
+      <div id="hex">play me!</div>
+      <div class="piano-keys">
+        <div class="piano-white piano-C3" onclick="changeColor('#f79caf');"></div>
+        <div class="piano-black">
+          <div class="piano-black-raised piano-Db3" onclick="changeColor('#ff9e88');"></div>
+        </div>
+        <div class="piano-white piano-D3" onclick="changeColor('#ffc280');"></div>
+        <div class="piano-black">
+          <div class="piano-black-raised piano-Eb3" onclick="changeColor('#ffcf64');"></div>
+        </div>
+        <div class="piano-white piano-E3" onclick="changeColor('#f4e769');"></div>
+        <div class="piano-white piano-F3" onclick="changeColor('#d3f39e');"></div>
+        <div class="piano-black">
+          <div class="piano-black-raised piano-Gb3" onclick="changeColor('#abefd7');"></div>
+        </div>
+        <div class="piano-white piano-G3" onclick="changeColor('#9fe6fc');"></div>
+        <div class="piano-black">
+          <div class="piano-black-raised piano-Ab3" onclick="changeColor('#8bd0f7');"></div>
+        </div>
+        <div class="piano-white piano-A3" onclick="changeColor('#b1befc');"></div>
+        <div class="piano-black">
+          <div class="piano-black-raised piano-Bb3" onclick="changeColor('#c8a2f9');"></div>
+        </div>
+        <div class="piano-white piano-B3" onclick="changeColor('#ebabef');"></div>
+      </div>
+      <div id="rgb">MADE BY EM</div>
+    </div>
+  </div>
+</body>
+
+</html>
